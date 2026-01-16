@@ -100,13 +100,10 @@ std::ostream& operator<<(std::ostream& os, const Observation& obs) { // changed 
 
 
 
-/* Task 7 — Main Driver (Minimal)
-   Requirements:
-     - Write a main() that:
-         * Creates a SignalSeries
-         * Adds 3 Observation objects
-         * Computes a signal at Medium risk
-         * Prints the result
+/* 
+    - Example usage below in main(){}
+    - Adds 3 signals intro SignalSeries.series
+    - Expresses the current contents of this SignalSeries vector
 */
 using std::cout, std::cin, std::endl;
 int main()
