@@ -92,7 +92,7 @@ std::ostream& operator<<(std::ostream& os, const Observation& obs) { // changed 
        << "Price: $" << obs.get_price() 
        << " | Volume: " << obs.get_vol() 
        << " | Timestamp: " 
-       << std::setw(6) << std::setfill('0') << obs.get_time(); // leading zeros for timestamp kept with "setw(6) and setfill"
+       << std::setw(6) << std::setfill('0') << obs.get_time(); // leading zeros for timestamp kept with "setw(6) and setfill", for 00:00:00 to 00:59:59
     
     // Return the stream so the next << can use it, i.e we can send multiple Observations through
     return os; 
@@ -102,7 +102,7 @@ std::ostream& operator<<(std::ostream& os, const Observation& obs) { // changed 
 
 /* 
     - Example usage below in main(){}
-    - Adds 3 signals intro SignalSeries.series
+    - Adds 3 signals into SignalSeries.series
     - Expresses the current contents of this SignalSeries vector
 */
 using std::cout, std::cin, std::endl;
